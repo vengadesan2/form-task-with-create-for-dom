@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>forms creation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+  <h1 id="title">form creation</h1>
+  <p id="description">form create by dom with dynamically</p>
+
+  <form id="form">
+    <div class="form-group">
+      <label for="first-names">firstname:</label>
+      <input type="text" placeholder="first-name" id="first-name" required />
+
+      <label for="last-name">lastname:</label>
+      <input type="text" name="lastname" id="last-name" required />
+
+      <label for="pincode">pincode:</label>
+      <input type="text" name="pincode" id="pincode" required />
+
+      <label for="address">address:</label>
+      <textarea id="address" name="address"  required></textarea>
+
+      <label> gender:</label>
+      <label for="male">
+        <input type="radio" value="male" id="male" name="gender" required />Male
+      </label>
+
+      <label for="female">
+        <input type="radio" value="male" id="female" name="gender" required />Female
+      </label>
+
+      <label for="food-choise">choise food</label>
+      <select name="food-choise" id="food-choise" required>
+        <option value="briyani">briyani</option>
+        <option value="boori">boori</option>
+        <option value="dhosa">dhosa</option>
+        <option value="vada">vada</option>
+      </select>
+
+      <label for="state">State :</label>
+      <input type="text" id="state" name="state" placeholder="State" required />
+
+      <label for="country">Country :</label>
+      <input type="text" id="country" name="country" placeholder="Country" required />
+
+      <button type="button" class="btn btn-primary" id="submit" onclick = "submitform()">submit</button>
+    </div>
+  </div>
+  </form>
+
+
+  <table id="datatable" class="table">
+    <thead>
+      <tr>
+        <td>firstname</td>
+        <td>lastname</td>
+        <td>pincode</td>
+        <td>address</td>
+        <td>gender</td>
+        <td>food</td>
+        <td>state</td>
+        <td>country</td>
+      </tr>
+    </thead>
+    <tbody >
+
+    </tbody>
+  </table>
+
+  <script src="./script.js"></script>
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+
+</html>
